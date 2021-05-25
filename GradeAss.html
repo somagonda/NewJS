@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GradeAss</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("Enter Marks :"));
+        var n1 = parseInt(prompt("Enter Marks1 :"));
+        var n2 = parseInt(prompt("Enter Marks2 :"));
+        var n4 = n + n1 + n2;
+        n4=+n4/3;n5=n4;
+        console.log("Avarage : "+n4);
+        console.log("=======Using Switch Case=======");
+        function Grade(){
+        n4=Math.trunc(+n4/10);
+        switch(+n4) {
+            case 1:case 2:case 3:case 4:case 5:
+                console.log("F-GRADE");
+                break;
+            case 6:
+                console.log("D-GRADE");
+                break;
+            case 7:
+                console.log("C-GRADE");
+                break;
+            case 8:
+                console.log("B-GRADE");
+            case 9:
+                console.log("A-GRADE");
+                break;
+            default:
+                console.log("ENTER VALID NUMBER");
+        }} Grade()
+
+console.log("=======Using Nested if else=======");
+        function Grade2()
+        {
+            if(n5<60)
+            {
+                console.log("F-GRADE")
+            }
+            else if(n5>=60 && n5<70)
+            {
+                console.log("D-GRADE")
+            }
+            else if(n5>=70 && n5<80)
+            {
+                console.log("C-GRADE")
+            }
+            else if(n5>=80 && n5<90)
+            {
+                console.log("B-GRADE")
+            }
+            else if(n5>=90 && n5<=100)
+            {
+                console.log("A-GRADE")
+            }
+        } Grade2()
+   
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Star Pattern Print</title>
+</head>
+<body>
+    <p id="s" style="font-size: 25px;"></p>
+    <script>
+ var n=parseInt(prompt("Enter Number :"));
+ if(!(n>5))
+        for(var i=1;i<=n;i++)
+        {
+            for(var j=n;j>=i;j--)
+            {
+              document.getElementById("s").innerHTML+="* ";
+            }
+            document.getElementById("s").innerHTML+="<br>";
+        }
+    else{
+        document.getElementById("s").innerHTML+="PLZ ENTER VALID NUMBER IN GIVEN RANGE";
+        }
+
+
+        if(!(n>5))
+
+        for(var i=1;i<=n;i++)
+        {
+            for(var j=1;j<=n;j++)
+            {
+                if(i+j<=n+1)
+                {
+              document.getElementById("s").innerHTML+="* ";
+                }
+            }
+            document.getElementById("s").innerHTML+="<br>";
+        }
+    else{
+        document.getElementById("s").innerHTML+="PLZ ENTER VALID NUMBER IN GIVEN RANGE";
+        }
+
+
+    </script>
+<body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Even ODD</title>
+</head>
+<body>
+    <script>
+           var n = parseInt(prompt("Enter RANGE :"));var x="",x1="";
+           if (!(n>100))
+           {
+               for(i=1;i<=n;i++)
+               {
+                   if(i%2==0)
+                   {
+                    x+=i+" ";  
+                   }
+                   else
+                   {
+                    x1+=i+" ";  
+                   }
+               }
+               console.log("THE EVEN NUMBERS ARE : "+x+" ");
+               console.log("THE ODD NUMBERS ARE : "+x1+" ");
+           }
+           else
+           {
+            console.log("NOT A VALID RANGE...");
+           }
+           
+    </script>
+</body>
+</html>

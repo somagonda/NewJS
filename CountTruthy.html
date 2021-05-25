@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Count Truthy</title>
+</head>
+<body>
+   <script>
+  var array=[null,undefined,12,"som","",1234,27,
+  "Suresh",0,78,"Shri",0,900,false,[],{},0,0];
+   var count=0;
+  for(i=0;i<array.length;i++)
+   {
+       if(!(array[i]!==false && array[i]!==null && array[i]!==0
+       && array[i]!==undefined))
+       {
+           count++;
+       }
+   }
+   console.log(count);
+   </script> 
+</body>
+</html>

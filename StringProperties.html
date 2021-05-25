@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>String Properties</title>
+</head>
+<body>
+    <script>
+        const student = {
+    Name : 'Som',
+    LastName : 'Patil',
+    DobYear : 1993,
+    Age:27,
+    Address: 'Kolhapur',
+    Email: 'som2231@gmail.com',
+    Phone: 9876543212
+}
+        function showProperties(object)
+        {
+           for(key in object)
+           if(isNaN(object[key])){
+           console.log(object[key]);}
+        }
+        showProperties(student)
+    </script>
+</body>
+</html>
