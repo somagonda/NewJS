@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Area Of Circle</title>
+</head>
+<body>
+    <script>
+          class AreaOfCircle
+          {
+            constructor(radius)
+            {
+                this.radius=radius;
+            }
+            getDimeter()
+            {
+                return this.radius * 2;
+            }
+            getCircumference()
+            {
+                return Math.PI * this.getDimeter();
+            }
+            getAreaOfCircle()
+            {
+                return Math.PI * this.radius * this.radius;
+            }
+          }
+        var get = new AreaOfCircle(10);
+        console.log("Radius: "+get.radius+" in");
+        console.log("Diameter: "+ get.getDimeter()+" in");
+        console.log("Circumference: "+ get.getCircumference().toFixed(2)+" in");
+        console.log("Area of circle: "+ get.getAreaOfCircle().toFixed(2)+" in2");
+    </script>
+</body>
+</html>
