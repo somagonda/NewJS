@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Occurance</title>
+</head>
+<body>
+<script>
+    var arr = [1, 2, 3, 4, 5, 1, 1, 1 , 6, 7, 8, 9, 10, 1];
+        function ArrayOccurance(arr,ele) {
+            var count=0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i] ==ele) {
+                       count++;
+                    }
+                }
+            console.log("THE ARRAY ELEMENTS: "+arr);
+            console.log("Occurance of "+ele+" is: "+count);
+        }
+        ArrayOccurance(arr,1)
+</script>
+</body>
+</html>

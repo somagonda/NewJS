@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moving an Element</title>
+</head>
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6];
+        console.log("Before adding new Element: " + arr);
+        function MoveElements(insertIndex, Number)
+         {
+            if (insertIndex <= arr.length)
+             {
+                arr.splice(insertIndex, 0, Number);
+                console.log("After adding new Element: " + arr);
+             }
+            else { console.log("ENTER VALID INSERT POSTION"); }
+         }
+        MoveElements(5, 5)
+    </script>
+</body>
+</html>

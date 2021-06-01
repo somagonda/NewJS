@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Array-MoviesSort</title>
+</head>
+<body>
+    <script>
+        const movies = [
+    { title: 'LAXMI', year: 2018, rating: 4.5 },
+    { title: 'KABIR SINGH', year: 2018, rating: 4.7 },
+    { title: 'KGF', year: 2019, rating: 3.8 },
+    { title: 'DDLJ2', year: 2017, rating: 4.5 },
+    { title: 'DABBANG3', year: 2018, rating: 3.7 },
+    { title: 'GOLD', year: 2020, rating: 4.5 }
+];
+function getmovie()
+{
+console.log("The Movies Released in year 2018 with rating 4+ are: ")
+for (var mov in movies) 
+{
+  if(movies[mov].rating>=4 && movies[mov].year==2018)
+  {
+      console.log(`${movies[mov].title}`)
+  }
+}
+}
+getmovie()
+console.log("The Movies sorted desending order by rating ")
+   movies.sort(function(a,b)
+   {
+       return b.rating - a.rating
+   })
+console.log(movies);
+    </script>
+   
+</body>
+</html>
